@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Muli');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background: #000;
+}
+
+.logo {
+    padding-left: 100px;
+}
+
+footer {
+    font-family: 'Muli', sans-serif;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background: black;
+    color: #fff;
+    text-align: center;
+}
+
+.btn-purple {
+    padding: 10px 60px 10px 60px;
+    color: #fff;
+    border: 3px solid #4d13d1;
+    border-radius: 25px;
+    transition: all 0.8s;
+}
+
+.btn-purple:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #6c5ce7;
+}
