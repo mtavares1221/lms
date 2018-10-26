@@ -1,0 +1,203 @@
+{% load static %}
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/detalhe-curso.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
+</head>
+
+<body>
+    <div class="main">
+        <header class="navegacao">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../index">Início</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown">Nossos
+                        Cursos</a>
+                    <div class="dropdown-menu bg-dark">
+                        <a class="dropdown-item" href="../adm">Administração</a>
+                        <a class="dropdown-item" href="">Análise e Desenvolvimento de Sistemas</a>
+                        <a class="dropdown-item" href="../dsc/dsc">Ciência de Dados</a>
+                        <a class="dropdown-item" href="../jd/jd">Jogos Digitais</a>
+                        <a class="dropdown-item" href="../pm/pm">Produção Multimídia</a>
+                        <a class="dropdown-item" href="../dse/dse">Segurança de Dados</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Sobre Nós</a>
+                </li>
+            </ul>
+        </header>
+        <section class="curso">
+            <h1 class="text-center">Análise e Desenvolvimento de Sistemas</h3>
+        </section>
+        <section class="sobre col-md-12">
+            <div class="container">
+                <h2>Sobre o Curso</h2>
+                <p>Entender as necessidades das empresas é fundamental para fazê-las crescer e gerar bons resultados.
+                    Desta maneira, um dos caminhos para alavancar os negócios e se destacar no mercado de trabalho é o
+                    da Tecnologia. Para isso, a Faculdade Impacta oferece a graduação em Análise e Desenvolvimento de
+                    Sistemas, que prepara você para atuar em todas as etapas de projetos de tecnologia da informação -
+                    concepção, gerência e manutenção, aplicação e mensuração de resultados.
+
+                    O curso é voltado para a criação de programas, softwares e sistemas para as empresas. As etapas do
+                    projeto de sistemas de software, como análise, projeto, teste, gestão, implantação e manutenção de
+                    sistemas de informação também estão entre os aprendizados da graduação.
+                </p>
+                <h4><i class="far fa-calendar"></i> Duração</h4>
+                <p>4 semestres</p>
+                <h4><i class="far fa-clock"></i> Período</h4>
+                <p>
+                    Matutino | 08h00 às 11h40 | <br />
+                    Noturno | 19h00 às 22h40 |
+                </p>
+                <h4><i class="fas fa-money-check"></i> Mensalidade</h4>
+                <p>R$ 487,90</p>
+            </div>
+        </section>
+        <section class="grade">
+            <div class="container text-center">
+                <h2>Grade Currícular</h2>
+                <div class="accordion text-center" id="semestres">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#primeiro-sem">
+                                    Primeiro Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="primeiro-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Comunicação e Expressão: 80h</li>
+                                    <li>Fundamento de Banco de Dados: 80h</li>
+                                    <li>Introdução a Internet das Coisas: 80h</li>
+                                    <li>Linguagem de Programação I: 80h</li>
+                                    <li>Lógica de Programação: 80h</li>
+                                    <li>Matemática Aplicada: 80h</li>
+                                    <li><strong>Subtotal: 480h </strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#segundo-sem">
+                                    Segundo Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="segundo-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Ambiente de Desenvolvimento e Operação - DevOps: 80h</li>
+                                    <li>Engenharia de Software: 80h</li>
+                                    <li>Gestão de Projetos: 40h</li>
+                                    <li>Libras: 40h</li>
+                                    <li>Linguagem SQL: 80h</li>
+                                    <li>Linguagem de Programação II: 80h</li>
+                                    <li>Tecnologia Web: 80h</li>
+                                    <li><strong>Subtotal: 520h </strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#terceiro-sem">
+                                    Terceiro Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="terceiro-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Análise e Modelagem de Sistemas: 80h</li>
+                                    <li>Desenvolvimento de Aplicações Distribuídas: 80h</li>
+                                    <li>Estrutura de Dados: 80h</li>
+                                    <li>Interface Homem-Computador: 40h</li>
+                                    <li>Modelagem de Processos de Negócios: 80h</li>
+                                    <li>OPE I - Oficina Projeto Empresa I: 80h</li>
+                                    <li><strong>Subtotal: 440h </strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#quarta-sem">
+                                    Quarto Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="quarta-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Arquitetura e Projeto de Sistemas: 80h</li>
+                                    <li>Desenvolvimento para Dispositivos Móveis: 80h</li>
+                                    <li>Desenvolvimento para Internet das Coisas: 80h</li>
+                                    <li>Legislação e Ética: 40h</li>
+                                    <li>Qualidade de Software: 80h</li>
+                                    <li>OPE II - Oficinica Projeto Empresa II: 80h</li>
+                                    <li><strong>Subtotal: 440h </strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="mercado text-right">
+            <div class="container">
+                <h2>Mercado de Trabalho</h2>
+                <p class="text-left">
+                    A área de Análise e Desenvolvimento de Sistemas está entre as que mais contratam no País. Empresas
+                    públicas ou privadas de TI, de telecomunicações, entre outros segmentos, são opções com
+                    oportunidades atraentes para este profissional.
+
+
+                    Você pode atuar como Analista de Requisitos, Analista de Desenvolvimento, Analista de Sistemas,
+                    Analista de Negócio e Analista de Teste ou ainda desenvolver aplicativos para celular ou jogos para
+                    computador.
+                </p>                
+            </div>
+            <div class="inscricao text-center">
+                <a href="../../inscricao/inscricao" class="btn-orange">Inscrever-se</a>
+            </div>
+        </section>
+
+        <footer>
+            <h5>Criado por: Guilherme Vieira, Marcelo Tavares, Thiago de Andrade | FACULDADE IMPACTA DE TECNOLOGIA -
+                2018</h5>
+        </footer>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,8 +1,73 @@
-body{
-
-}
-
-p {
+section h1, 
+section h2 {
     font-family: 'Titillium Web', sans-serif;
-    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f39c12;
 }
+ h4 {
+    color: #f39c12;
+ }
+
+ .curso {
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-bottom: 40px;
+ }
+
+ .sobre {
+    padding-bottom: 25;
+ }
+
+ .grade {
+    margin-bottom: 25px;
+}
+
+.accordion {
+    margin-top: 25px;
+}
+
+.card {
+     border: none;
+}
+
+ .card-header {
+     background: #303030;   
+ }
+
+ .card-header h5 button {
+     font-family: 'Roboto Mono', sans-serif;
+     border-radius: none;
+     font-size: 22px;
+     color: #f39c12;
+     font-weight: bold;
+ }
+
+ .card-header h5 button:hover {
+     color: #f1c40f;
+     text-decoration: none;
+ }
+ 
+ .card-body {
+     background: #4b4b4b;
+     color: #f39c12;
+     font-size: 18px;
+ }
+
+ .card-body ul{
+     padding-left: 50px;
+ }
+
+ .mercado {
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+
+ .mercado a {
+     color: #f39c12;
+     font-weight: bold;
+ }

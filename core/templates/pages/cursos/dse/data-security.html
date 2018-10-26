@@ -1,0 +1,277 @@
+{% load static %}
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/detalhe-curso.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cursos/adm.css' %}">
+</head>
+
+<body>
+    <div class="main">
+        <header class="navegacao">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../index">Início</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown">Nossos
+                        Cursos</a>
+                    <div class="dropdown-menu bg-dark">
+                        <a class="dropdown-item" href="">Administração</a>
+                        <a class="dropdown-item" href="../ads/">Análise e Desenvolvimento de Sistemas</a>
+                        <a class="dropdown-item" href="../dsc/">Ciência de Dados</a>
+                        <a class="dropdown-item" href="../jd/">Jogos Digitais</a>
+                        <a class="dropdown-item" href="../pm/">Produção Multimídia</a>
+                        <a class="dropdown-item" href="../dse/">Segurança de Dados</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Sobre Nós</a>
+                </li>
+            </ul>
+        </header>
+        <section class="curso">
+            <h1 class="text-center">Administração</h3>
+        </section>
+        <section class="sobre col-md-12">
+            <div class="container">
+                <h2>Sobre o Curso</h2>
+                <p>Tornar-se um líder. Ser um empreendedor. Fazer investimentos. Você tem inúmeras possibilidades na graduação em Administração da Faculdade Impacta.
+
+                    O curso é voltado para as exigências do mercado de trabalho atual e aborda de forma ampla o universo corporativo. Você vai aprender a definir as melhores estratégias para o bom funcionamento das empresas, para gerar lucros, controlar gastos e se destacar com qualidade entre as concorrentes.
+                    
+                    Gerir equipes, negociar com fornecedores, solucionar diferentes problemas, atingir resultados positivos, aumentar a produtividade e aplicar novas tecnologias nas organizações também são funções do administrador.
+                    
+                    Ao final do 2.º ano, os alunos já terão o diploma de Tecnólogo em Processos Gerenciais.
+                </p>
+                <h4><i class="far fa-calendar"></i> Duração</h4>
+                <p>8 semestres</p>
+                <h4><i class="far fa-clock"></i> Período</h4>
+                <p>
+                    Noturno | 19h00 às 22h40 |
+                </p>
+                <h4><i class="fas fa-money-check"></i> Mensalidade</h4>
+                <p>R$ 363,75</p>
+            </div>
+        </section>
+        <section class="grade">
+            <div class="container text-center">
+                <h2>Grade Currícular</h2>
+                <div class="accordion text-center" id="semestres">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#primeiro-sem">
+                                    Primeiro Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="primeiro-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Comunicação e Expressão: 80h</li>
+                                    <li>Fundamentos da Administração: 80h</li>
+                                    <li>Macroeconomia: 80h</li>
+                                    <li>Modelo de Negócios e Empreendedorismo: 80h</li>
+                                    <li>Pensamento Crítico e Ética: 80h</li>
+                                    <li>Matemática Aplicada: 80h</li>
+                                    <li><strong>Subtotal: 480h </strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#segundo-sem">
+                                    Segundo Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="segundo-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Análise Exploratória de Dados: 80 horas</li>
+                                    <li>Cálculo: 80 horas</li>
+                                    <li>Contabilidade Finaceira: 80 horas</li>
+                                    <li>Libras: 40 horas</li>
+                                    <li>Microeconomia: 80 horas</li>
+                                    <li>Raciocínio Analítico : 40 horas</li>
+                                    <li>Sociedade e Política: 40 horas</li>
+                                    <li>Sociedade e Sustentabilidade: 40 horas</li>
+                                    <li><strong>Subtotal: 480 horas</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#terceiro-sem">
+                                    Terceiro Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="terceiro-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Comportamento Organizacional: 40 horas</li>
+                                    <li>Contabilidade Gerencial: 80 horas</li>
+                                    <li>Gestão de Projetos e Programas: 80 horas</li>
+                                    <li>Inteligência de Negócios: 80 horas</li>
+                                    <li>Matemática Financeira: 40 horas</li>
+                                    <li>Modelagem de Processos de Negócios: 80 horas</li>
+                                    <li><strong>Subtotal: 400 horas</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#quarta-sem">
+                                    Quarto Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="quarta-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Administração Financeira: 80 horas</li>
+                                    <li>Estratégia Organizacional: 80 horas</li>
+                                    <li>Gestão de Marketing: 80 horas</li>
+                                    <li>Gestão de Operações: 80 horas</li>
+                                    <li>Gestão Estratégica de Pessoas: 80 horas</li>
+                                    <li><strong>Subtotal: 400 horas</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#quinto-sem">
+                                    Quinto Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="quinto-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Design Thinking: 40 horas</li>
+                                    <li>Direito Aplicado à Administração: 80 horas</li>
+                                    <li>Gestão da Cadeia de Suprimentos: 80 horas</li>
+                                    <li>Marketing Avançado: 80 horas</li>
+                                    <li>Responsabilidade Social e Corporativa: 40 horas</li>
+                                    <li>Startup e Inovação: 80 horas</li>
+                                    <li><strong>Subtotal: 400 horas</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#sexto-sem">
+                                    Sexto Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="sexto-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Finanças Corporativas e Mercado de Capitais: 80 horas</li>
+                                    <li>Gestão de Custos: 80 horas</li>
+                                    <li>Gestão de Projetos e Inovação: 80 horas</li>
+                                    <li>Gestão de Qualidade: 80 horas</li>
+                                    <li>Tomada de Decisão e Negociação: 80 horas</li>
+                                    <li><strong>Subtotal: 400 horas</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#set-sem">
+                                    Sétimo Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="set-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Análise de Viabilidade de Projetos: 80 horas</li>
+                                    <li>Estratégia Competitiva e Corporativa: 80 horas</li>
+                                    <li>Jogos de Estratégia: 80 horas</li>
+                                    <li>Trabalho de Conclusão de Curso 1 - TCC1: 40 horas</li>
+                                    <li><strong>Subtotal: 280 horas</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#oitavo-sem">
+                                    Oitavo Semestre
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="oitavo-sem" class="collapse" data-parent="#semestres">
+                            <div class="card-body">
+                                <ul class="text-left">
+                                    <li>Governança Corporativa: 80 horas</li>
+                                    <li>Negócios Internacionais: 80 horas</li>
+                                    <li>Sistemas Integrados de Gestão: 80 horas</li>
+                                    <li>Trabalho de Conclusão de Curso 2 -TCC2: 40 horas</li>
+                                    <li><strong>Subtotal: 280 horas</strong></strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="mercado text-right">
+            <div class="container">
+                <h2>Mercado de Trabalho</h2>
+                <p class="text-left">
+                    O mercado de trabalho é amplo e está repleto de oportunidades. Empresas privadas, públicas e do terceiro abrem suas portas para o administrador, que pode desempenhar suas funções em diferentes setores, como Recursos Humanos, Marketing, Logística, Financeiro e Vendas. Liderar equipes, prestar consultorias ou abrir o próprio negócio também são opções para este profissional.
+                </p>                
+            </div>
+            <div class="inscricao text-center">
+                <a href="../../inscricao/inscricao" class="btn-orange">Inscrever-se</a>
+            </div>
+        </section>
+
+        <footer>
+            <h5>Criado por: Guilherme Vieira, Marcelo Tavares, Thiago de Andrade | FACULDADE IMPACTA DE TECNOLOGIA -
+                2018</h5>
+        </footer>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

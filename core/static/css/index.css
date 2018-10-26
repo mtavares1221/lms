@@ -1,24 +1,88 @@
-.main {
-    background-image: url(../images/background.jpg);
+section.inicial {
+    background-image: url(../images/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center top;
     width: 100%;
     height: auto;
+    padding-top: 10%;
+    padding-bottom: 15%;
 }
 
-.card-index {
-    font-family: 'Muli', sans-serif;
+section.inicial h3 {
+    font-family: 'Comfortaa', sans-serif;
     color: #fff;
-    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 256px;
+    height: 256px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    transition: all 1s;
 }
 
-.card-index:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+section.cursos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #313030;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.cursos h2 {
+    color: #f39c12;
+    font-weight: bold;
+    font-size: 42px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.bl-cursos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.img-cursos {
+    width: 400px;
+    height: 175px;
+    border: 1px solid #f39c12;
+    margin-bottom: 10px;
+}
+
+
+/* Equipe */
+
+.equipe {
+    font-family: 'Titillium Web', sans-serif;
+    background: #f39c12;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.item-equipe {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.equipe h2 {
+    color: #313130;
+    font-weight: bold;
+    font-size: 42px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.equipe h5 {
+    font-family: 'Roboto Mono', sans-serif;
+    letter-spacing: 1px;
+}
+
+.img-equipe {
+    width: 210px;
+    height: 210px;
+    border-radius: 100%;
 }

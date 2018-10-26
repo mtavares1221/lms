@@ -1,47 +1,132 @@
 {% load static %}
 
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ title | upper }}</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
 </head>
+
 <body>
     <div class="main">
-        <header>
-                <img src="{% static 'images/logo.png' %}" alt="Logo da Onlearning" class="logo">
+        <header class="navegacao">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown">Nossos Cursos</a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="pages/cursos/adm/" target="_blank">Administração</a>
+                        <a class="dropdown-item" href="pages/cursos/ads/" target="_blank">Análise e Desenvolvimento de Sistemas</a>
+                        <a class="dropdown-item" href="pages/cursos/dsc/" target="_blank">Ciência de Dados</a>
+                        <a class="dropdown-item" href="pages/cursos/dse/" target="_blank">Segurança de Dados</a>
+                        <a class="dropdown-item" href="pages/cursos/jd/" target="_blank">Jogos Digitais</a>
+                        <a class="dropdown-item" href="pages/cursos/pm/" target="_blank">Produção Multimídia</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre-nos" class="nav-link">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/noticias" class="nav-link">Notícias</a>
+                </li>
+            </ul>
         </header>
-       <div class="row animated slideInLeft">
-           <div class="col-sm-10 col-md-10 text-center card-index">
-               <h4>Ir para Lista de Cursos</h4><br>
-               <a href="{% url 'lista_cursos' %}" target="_blank" class="btn-purple">Clique Aqui</a>
-           </div>
-           <div class="col-sm-10 col-md-10 text-center card-index">
-               <h4>Ir para Detalhes do Curso</h4><br>
-               <a href="{% url 'detalhe_curso' %}" target="_blank" class="btn-purple">Clique Aqui</a>
-           </div>
-            <div class="col-sm-10 col-md-10 text-center card-index" class="btn-purple">
-                <h4>Ir para Disciplinas</h4><br>
-                <a href="{% url 'disciplina' %}" target="_blank" class="btn-purple">Clique Aqui</a>
+        <section class="col-sm-12 inicial">
+            <img src="{% static 'images/logo_512x512.png' %}" alt="Logo da Onlearning" class="logo">
+            <h3> A comodidade de estudar em casa, como se estivesse em sala de aula.</h3><br/>
+            <center>
+                <a href="pages/inscricao/inscricao" class="btn-orange">Matricule-se</a>
+                <a href="login" class="btn-orange">Acessar</a>
+            </center>
+        </section>
+        <section class="col-sm-12 cursos">
+            <h2>cursos</h2>
+            <div class="row">
+                <div class="col-md-4 bl-cursos">
+                    <a href="pages/cursos/ads/">
+                        <img src="{% static 'images/cursos/ads.jpg' %}" alt="Curso de Análise e Desenvolvimento de Sistemas" class="img-cursos">
+                    </a>
+                    <h4>Análise e Desenvolvimento de Sistemas</h4><br/>
+                    <a href="pages/inscricao/inscricao" class="btn-orange">Inscrever-se</a>
+                </div>
+                <div class="col-md-4 bl-cursos">
+                    <a href="pages/cursos/dsc/">
+                        <img src="{% static 'images/cursos/data-science.jpeg' %}" alt="Curso de Ciência de Dados" class="img-cursos">
+                    </a>
+                    <h4>Ciência de Dados</h4><br/>
+                    <a href="pages/inscricao/inscricao" class="btn-orange">Inscrever-se</a>
+                </div>
+                <div class="col-md-4 bl-cursos">
+                    <a href="pages/cursos/dse/">
+                        <img src="{% static 'images/cursos/data-security.jpg' %}" alt="Curso de Segurança de Dados" class="img-cursos">
+                    </a>
+                    <h4>Segurança de Dados</h4><br/>
+                    <a href="pages/inscricao/inscricao" class="btn-orange">Inscrever-se</a>
+                </div>
             </div>
-            <div class="col-sm-10 col-md-10 text-center card-index">
-                <h4>Ir para Notícias</h4><br>
-                <a href="{% url 'noticias' %}" target="_blank" class="btn-purple">Clique Aqui</a>
+            <div class="row">
+                <div class="col-md-4 bl-cursos">
+                    <a href="pages/cursos/adm/">
+                        <img src="{% static 'images/cursos/administracao.jpg' %}" alt="Curso de Administração" class="img-cursos">
+                    </a>
+                    <h4>Administração</h4><br/>
+                    <a href="pages/inscricao/inscricao" class="btn-orange">Inscrever-se</a>
+                </div>
+                <div class="col-md-4 bl-cursos">
+                    <a href="pages/cursos/jd/">
+                        <img src="{% static 'images/cursos/jogos-digitais.jpg' %}" alt="Curso de Jogos Digitais" class="img-cursos">
+                    </a>
+                    <h4>Jogos Digitais</h4><br/>
+                    <a href="pages/inscricao/inscricao" class="btn-orange">Inscrever-se</a>
+                </div>
+                <div class="col-md-4 bl-cursos">
+                    <a href="pages/cursos/pm/">
+                        <img src="{% static 'images/cursos/prod-multimidia.jpg' %}" alt="Curso de Produção Multimídia" class="img-cursos">
+                    </a>
+                    <h4>Produção Multimídia</h4><br/>
+                    <a href="pages/inscricao/inscricao" class="btn-orange">Inscrever-se</a>
+                </div>
             </div>
-        </div>
+        </section>
+        <section class="col-sm-12 equipe" id="sobre-nos">
+            <h2>Equipe</h2>
+            <div class="row">
+                <div class="col-md-4 item-equipe">
+                    <img src="{% static 'images/equipe/guilherme-vieira.jpg' %}" alt="Foto de Guilherme Vieira" class="img-equipe">
+                    <h3>Guilherme Vieira</h3>
+                    <h5>Desenvolvimento Front-end</h5>
+                </div>
+                <div class="col-md-4 item-equipe">
+                    <img src="{% static 'images/equipe/marcelo-tavares.JPG' %}" alt="Foto de Marcelo Tavares" class="img-equipe">
+                    <h3>Marcelo Tavares</h3>
+                    <h5>Desenvolvimento Back-end</h5>
+                </div>
+                <div class="col-md-4 item-equipe">
+                    <img src="{% static 'images/equipe/thiago-andrade.jpg' %}" alt="Foto de Thiago de Andrade" class="img-equipe">
+                    <h3>Thiago de Andrade</h3>
+                    <h5>Banco de Dados</h5>
+                </div>
+            </div>
+        </section>
         <footer>
-            <h5>Criado por: Guilherme Vieira, Marcelo Tavares, Thiago de Andrade | 2018</h5>
-       </footer>
-   </div>
-  
-   
+            <h5>Criado por: Guilherme Vieira, Marcelo Tavares, Thiago de Andrade | FACULDADE IMPACTA DE TECNOLOGIA - 2018</h5>
+        </footer>
+    </div>
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,30 @@
+
+.btn-orange {
+    padding: 5px 50px 10px 50px;
+    color: #fff;
+    border: 3px solid #BA7810;
+    border-radius: 25px;
+    transition: all 0.8s;
+    font-size: 20px;
+}
+
+.btn-orange:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #f39c12;
+}
+
+
+.form-input {
+    width: 250px;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.form-input:focus {
+    color: #333;
+    outline: 0;
+    border: 2px solid #f39c12;
+    
+}

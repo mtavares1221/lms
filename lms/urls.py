@@ -4,10 +4,17 @@ from core.views import *
 
 urlpatterns = [ 
     path('', index),
-    path('pages/lista-cursos.html', lista_cursos, name='lista_cursos'),
-    path('pages/detalhe-curso.html', detalhe_curso, name='detalhe_curso'),
-    path('pages/disciplina.html', disciplina, name='disciplina'),
-    path('pages/noticias.html', noticias, name='noticias'),
+    path('index', index),
+    path('login', login),
+    path('pages/inscricao/inscricao', inscricao),
+    path('pages/cursos/adm/', adm),
+    path('pages/cursos/ads/', ads),
+    path('pages/cursos/dsc/', data_science),
+    path('pages/cursos/dse/', data_security),
+    path('pages/cursos/jd/', jogos_digitais),
+    path('pages/cursos/pm/', prod_multimidia),
+    path('pages/noticias/', noticias),
     path('admin/', admin.site.urls),
     
 ]
+

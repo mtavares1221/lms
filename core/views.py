@@ -8,26 +8,61 @@ def index(request):
     }
     return render(request, "index.html", context)
 
-def lista_cursos(request):
+def adm(request):
     context = {
-        'title': 'Onlearning | Lista de Cursos'
+        'title': 'Onlearning - Curso de Administração'
     }
-    return render(request, "pages/lista-cursos.html", context)
+    return render(request, "pages/cursos/adm/adm.html", context)
 
-def detalhe_curso(request):
-    context = {
-        'title': 'Onlearning | Detalhes do Curso'
-    }
-    return render(request, "pages/detalhe-curso.html", context)
 
-def disciplina(request):
+def ads(request):
     context = {
-        'title': 'Onlearning | Disciplinas'
+        'title': 'Onlearning - Curso de Análise e Desenvolvimento de Sistemas'
     }
-    return render(request, "pages/disciplina.html", context)
+    return render(request, "pages/cursos/ads/ads.html", context)
+
+
+def data_science(request):
+    context = {
+        'title': 'Onlearning - Curso de Ciência de Dados'
+    }
+    return render(request, "pages/cursos/dsc/data-science.html", context)
+
+def data_security(request):
+    context = {
+        'title': 'Onlearning - Curso de Segurança de Dados'
+    }
+    return render(request, "pages/cursos/dse/data-security.html", context)
+
+def jogos_digitais(request):
+    context = {
+        'title': 'Onlearning - Curso de Jogos Digitais'
+    }
+    return render(request, "pages/cursos/jd/jogos-digitais.html", context)
+
+def prod_multimidia(request):
+    context = {
+        'title': 'Onlearning - Curso de Produção Multimídia'
+    }
+    return render(request, "pages/cursos/pm/prod-multimidia.html", context)
 
 def noticias(request):
     context = {
         'title': 'Onlearning | Noticias'
     }
-    return render(request, "pages/noticias.html", context)
+    return render(request, "pages/noticias/noticias.html", context)
+
+
+# Inscrições
+def inscricao(request):
+    context = {
+        'title': 'Onlearning - Inscrever-se'
+    }
+    return render(request, 'pages/inscricao/inscricao.html', context)
+
+# Login
+def login(request):
+    context = {
+        'title': 'Onlearning - Login'
+    }
+    return render(request, 'login.html', context)
