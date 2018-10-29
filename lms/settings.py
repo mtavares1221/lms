@@ -25,7 +25,8 @@ SECRET_KEY = '#@be%8+o40amaua&o03g87=3gmli9@aq1dg7)rg!!9%*lga0k_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Change the URL to your specific site
+ALLOWED_HOSTS = ['onlearning.azurewebsites.net']
 
 
 # Application definition
