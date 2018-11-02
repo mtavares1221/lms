@@ -1,0 +1,71 @@
+{% load static %}
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/areas.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components.css' %}">
+</head>
+
+<body>
+    <div class="main">
+        <header class="navegacao">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown">Nossos Cursos</a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="cursos/adm/" target="_blank">Administração</a>
+                        <a class="dropdown-item" href="cursos/ads/" target="_blank">Análise e Desenvolvimento de Sistemas</a>
+                        <a class="dropdown-item" href="cursos/dsc/" target="_blank">Ciência de Dados</a>
+                        <a class="dropdown-item" href="cursos/dse/" target="_blank">Segurança de Dados</a>
+                        <a class="dropdown-item" href="cursos/jd/" target="_blank">Jogos Digitais</a>
+                        <a class="dropdown-item" href="cursos/pm/" target="_blank">Produção Multimídia</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="noticias" class="nav-link">Notícias</a>
+                </li>
+            </ul>
+        </header>
+        <section class="inicial">
+            <div class="row">
+                <ul class="menu-lateral">
+                    <img src="{% static 'images/logo_512x512.png' %}" alt="Logo da Onlearning" class="logo-pequeno">
+                    <li><a>Notas e Faltas</a></li>
+                    <li><a>Atividades Complementares</a></li>
+                    <li><a>Contato dos Professores</a></li>
+                    <li><a>Secretaria</a></li>
+                    <li><a>Coordenacao</a></li>
+                    <li><a>SmartClass</a></li>
+                </ul>
+
+                <div class="mural col-sm-9">
+                    <h2>Mural de Recados</h2>
+                    <p>Nenhum recado para agora</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <h5>Criado por: Guilherme Vieira, Marcelo Tavares, Thiago de Andrade | FACULDADE IMPACTA DE TECNOLOGIA - 2018</h5>
+        </footer>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
