@@ -1,0 +1,42 @@
+.inicial {
+    background-color: #f39c12;
+}
+
+ul.menu-lateral {
+    background: #313130;
+    color: #fff;
+    width: 300px;
+    margin-left: 15px;
+    height: 100%;
+    
+    margin-top: 15px;
+}
+
+ul.menu-lateral li{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+ul.menu-lateral li:hover{
+    margin-left: 0px;
+    padding-left: 5px;
+    background-color: #292929;
+    border-left: 5px solid #f39c12;
+}
+
+
+.mural {
+    background-color: #f39c12;
+    margin-top: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-pequeno {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

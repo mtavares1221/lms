@@ -16,7 +16,7 @@ urlpatterns = [
     path('area-aluno', area_aluno),
     path('area-coordenador', area_coordenador),
     path('area-professor', area_professor),
-    path('moticias/', noticias),
+    path('noticias/', noticias),
     path('admin/', admin.site.urls),
     
 ]

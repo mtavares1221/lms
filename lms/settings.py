@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,10 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#@be%8+o40amaua&o03g87=3gmli9@aq1dg7)rg!!9%*lga0k_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = TRUE
+DEBUG = True
 
 # Change the URL to your specific site
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['onlearning.azurewebsites.net', 'localhost']
 
 
 # Application definition
@@ -49,7 +50,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'lms.urls'
@@ -120,17 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/',
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
+STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, "live-static-files", "static-root")
-
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
-#STATIC_ROOT = "/home/cfedeploy/webapps/cfehome_static_root/"
-
-MEDIA_URL = "/media/"
-
-MEDIA_ROOT = os.path.join(BASE_DIR, "live-static-files", "media-root")
+# Activate Django-Heroku.
+django_heroku.settings(locals())

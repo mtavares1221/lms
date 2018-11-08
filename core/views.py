@@ -86,3 +86,4 @@ def area_professor(request):
         'title': 'Onlearning - Área do Professor'
     }
     return render(request, 'pages/acesso/area-professor/professor.html', context)
+

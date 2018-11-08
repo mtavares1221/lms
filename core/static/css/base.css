@@ -33,3 +33,9 @@ footer {
     color: #fff;
     text-align: center;
 }
+
+
+.logo-pequeno {
+    width: 80px;
+    height: 80px;
+}
