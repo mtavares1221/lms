@@ -66,3 +66,23 @@ def login(request):
         'title': 'Onlearning - Login'
     }
     return render(request, 'login.html', context)
+
+#Áreas
+def area_aluno(request):
+    context = {
+        'title': 'Onlearning - Área do Aluno'
+    }
+    return render(request, 'pages/acesso/area-aluno/aluno.html', context)
+
+def area_coordenador(request):
+    context = {
+        'title': 'Onlearning - Área do Coordenador'
+    }
+    return render(request, 'pages/acesso/area-coordenador/coordenador.html', context)
+
+
+def area_professor(request):
+    context = {
+        'title': 'Onlearning - Área do Professor'
+    }
+    return render(request, 'pages/acesso/area-professor/professor.html', context)
